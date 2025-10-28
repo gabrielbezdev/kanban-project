@@ -1,16 +1,19 @@
-# React + Vite
+# Kanban
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto está sendo criado para que eu consiga desenvolver habilidades ainda não exploradas, apesar de simples, alguns conceitos aplicados nele eu nunca havia aplicado em outros projetos.
 
-Currently, two official plugins are available:
+A ideia principal será criar um kanban estilo os existentes, mas simples, com as funcionalidades basicas e que sejá funcional e persistente, para que qualquer pessoa possa usar sem a necessidade de criar contas, aprender a mexer em uma plataforma e etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- O projeto será disponibilizado no vercel para que seja possivel utilizar a qualquer momento.
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Em breve.
 
-## Expanding the ESLint configuration
+## Instruções de uso
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Em breve.
+
+## Instruções para rodar o código
+
+Em breve.
