@@ -7,9 +7,9 @@ export const uid = (prefix = "id") =>
 
 export const DEFAULT_STATE = {
   columns: {
-    todo:  { id: "todo",  title: "A Fazer",  cardIds: [], color: "#3b82f6" },
-    doing: { id: "doing", title: "Fazendo",  cardIds: [], color: "#f59e0b" },
-    done:  { id: "done",  title: "Feito",    cardIds: [], color: "#10b981" },
+    todo:  { id: "todo",  title: "A Iniciar",  cardIds: [], color: "#3b82f6" },
+    doing: { id: "doing", title: "Em Desenvolvimento",  cardIds: [], color: "#f59e0b" },
+    done:  { id: "done",  title: "Concluídos",    cardIds: [], color: "#10b981" },
   },
   cards: {},
   columnOrder: ["todo", "doing", "done"],

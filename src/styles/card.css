@@ -1,0 +1,139 @@
+.kan-card {
+  position: relative;
+  width: 240px;
+  height: 140px;
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  color: var(--text);
+}
+
+.kan-card-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.kan-card-content {
+  white-space: pre-wrap;
+  width: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+.kan-card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.kan-card-title {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.kan-card-del {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  opacity: 0.7;
+  color: var(--muted);
+}
+.kan-card-del:hover {
+  opacity: 1;
+}
+
+.kan-badge {
+  top: 6px;
+  left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.kan-badge--ghost {
+  background: #f3f4f6;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+.kan-badge--high {
+  background: #ef4444;
+  color: #ffffff;
+}
+.kan-badge--medium {
+  background: #f59e0b;
+  color: #ffffff;
+}
+.kan-badge--low {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.kan-badge-menu {
+  position: absolute;
+  top: 32px;
+  left: 8px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 5;
+  min-width: 180px;
+}
+.kan-badge-item {
+  padding: 8px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+}
+.kan-badge-item:hover {
+  filter: brightness(0.95);
+}
+.kan-badge-item.kan-badge--high {
+  background: #ef4444;
+}
+.kan-badge-item.kan-badge--medium {
+  background: #f59e0b;
+}
+.kan-badge-item.kan-badge--low {
+  background: #10b981;
+}
+
+.kan-card-head-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kan-comment-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  color: #111827;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+}
+.kan-comment-icon {
+  display: inline-block;
+}
+.kan-comment-count {
+  font-weight: 700;
+}

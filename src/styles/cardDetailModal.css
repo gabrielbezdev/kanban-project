@@ -1,0 +1,86 @@
+.kan-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.kan-detail-label {
+  flex: 0 0 120px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding-top: 6px;
+}
+.kan-detail-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  flex: 1;
+}
+.kan-detail-value.multiline {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.kan-detail-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.kan-detail-pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: inherit;
+  color: var(--text);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.kan-detail-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90vw;
+}
+.kan-comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.kan-comment-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.kan-comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 320px;
+  overflow: auto;
+}
+.kan-comment-empty {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kan-comment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 10px;
+}
+.kan-comment-meta {
+  color: var(--muted);
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+}
+.kan-comment-text {
+  white-space: pre-wrap;
+  color: var(--text);
+}

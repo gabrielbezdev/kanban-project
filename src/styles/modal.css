@@ -1,0 +1,32 @@
+.kan-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.kan-modal {
+  width: min(520px, 96vw);
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+}
+.kan-modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.kan-modal-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.kan-footer {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}

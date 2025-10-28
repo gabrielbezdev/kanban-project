@@ -1,0 +1,120 @@
+.kan-col {
+  background: var(--bg);
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 5vh;
+  min-width: 300px;
+  border-top: 6px solid var(--col-color, #64748b);
+}
+.kan-col.is-dragging {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.kan-col-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.kan-head-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.kan-title {
+  color: var(--text);
+  font-weight: 700;
+  margin: 0;
+}
+.kan-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4b5563;
+  background: #eef2f7;
+  border: 1px solid #e5e7eb;
+}
+
+.kan-head-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kan-title-input {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 2px 2px;
+  min-width: 140px;
+}
+
+.kan-colorpicker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.kan-colorpicker input[type="color"] {
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+.kan-color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid var(--chip-border);
+  display: inline-block;
+}
+
+.kan-col-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  align-items: center;
+  flex: 1;
+}
+.kan-col-footer {
+  border-top: 1px dashed #e5e5e5;
+  padding: 8px 8px;
+}
+.kan-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: #374151;
+  cursor: pointer;
+}
+.kan-add-btn:hover {
+  background: #f3f4f6;
+}
+.kan-add-plus {
+  font-size: 18px;
+  line-height: 1;
+  color: #374151;
+}

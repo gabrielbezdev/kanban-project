@@ -48,3 +48,34 @@ export function moveAcross(state, sourceColId, destColId, activeId, overId) {
     },
   };
 }
+
+const PRIORITY_RANK = {
+  high: 0,
+  medium: 1,
+  low: 2,
+  none: 3,
+  undefined: 3,
+  null: 3,
+};
+
+export function sortColumnByPriority(state, columnId) {
+  const col = state.columns[columnId];
+  if (!col) return state;
+
+  const ids = [...col.cardIds];
+  ids.sort((a, b) => {
+    const pa = state.cards[a]?.priority ?? "none";
+    const pb = state.cards[b]?.priority ?? "none";
+    return (PRIORITY_RANK[pa] ?? 3) - (PRIORITY_RANK[pb] ?? 3);
+  });
+
+  if (ids.every((id, i) => id === col.cardIds[i])) return state;
+
+  return {
+    ...state,
+    columns: {
+      ...state.columns,
+      [columnId]: { ...col, cardIds: ids },
+    },
+  };
+}
